@@ -1,9 +1,9 @@
 # TUGAS PERTEMUAN 2 PEMROGRAMAN WEB 🛠️
 ## ID
-Nama : Ilham Nur Hermawan
-Kelas: TI-2021-KIP-P3
-Prodi: Teknik Informatika
-    
+- Nama : Ilham Nur Hermawan
+- Kelas: TI-2021-KIP-P3
+- Prodi: Teknik Informatika
+
 ## Tugas-02: GP – Hello World Github Pages ℹ
 - Daftarlah ke Github Pages hingga berhasil
 - Install Git-SCM
