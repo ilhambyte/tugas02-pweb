@@ -125,6 +125,7 @@ td:first-child {
 
 td:hover {
     background-color: #2aa118;
+    cursor: pointer;
 }
 
 /* Halaman Tabel Top 10 teman(end) */
