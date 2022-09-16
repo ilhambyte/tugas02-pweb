@@ -17,11 +17,11 @@ img {
     border: 0.2rem solid white;
 }
 
-.typed-out {
+.efek-mengetik {
     overflow: hidden;
     border-right: .15em solid;
     white-space: nowrap;
-    animation: typing 5s steps(50, end) forwards, blinking .8s infinite;
+    animation: ketik 5s steps(50, end) forwards, kedip .8s infinite;
     font-size: 1.6rem;
     width: 0;
     margin-top: 10px;
@@ -29,7 +29,7 @@ img {
     color: lime;
 }
 
-@keyframes typing {
+@keyframes ketik {
     from {
         width: 0
     }
@@ -39,7 +39,7 @@ img {
     }
 }
 
-@keyframes blinking {
+@keyframes kedip {
     from {
         border-color: transparent
     }
