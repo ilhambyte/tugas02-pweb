@@ -1,1 +1,16 @@
-const _0x6f5e7=_0x1a1f;function _0x5ad3(){const _0x543f07=['5512562cUoddP','10796MhXPce','1085330RuLjMp','.menu-tombol\x20input','6GNxdIA','2194616LxYfQB','click','42DYSKob','addEventListener','1010NLmPgp','querySelector','7eQQxNS','toggle','562620qIqcCT','Ada\x20apa\x20dengan\x20','11421jLTssI','nav\x20ul','1270950ruRngh','slide','ready'];_0x5ad3=function(){return _0x543f07;};return _0x5ad3();}function _0x1a1f(_0x207883,_0x476b60){const _0x5ad3f1=_0x5ad3();return _0x1a1f=function(_0x1a1f35,_0x31e3ba){_0x1a1f35=_0x1a1f35-0x1be;let _0x258ada=_0x5ad3f1[_0x1a1f35];return _0x258ada;},_0x1a1f(_0x207883,_0x476b60);}(function(_0x430053,_0x2a51d8){const _0x2d3a94=_0x1a1f,_0x459192=_0x430053();while(!![]){try{const _0x417752=parseInt(_0x2d3a94(0x1c9))/0x1*(-parseInt(_0x2d3a94(0x1c3))/0x2)+-parseInt(_0x2d3a94(0x1c6))/0x3*(-parseInt(_0x2d3a94(0x1cf))/0x4)+-parseInt(_0x2d3a94(0x1c4))/0x5+parseInt(_0x2d3a94(0x1bf))/0x6+-parseInt(_0x2d3a94(0x1cd))/0x7*(parseInt(_0x2d3a94(0x1c7))/0x8)+-parseInt(_0x2d3a94(0x1d1))/0x9*(parseInt(_0x2d3a94(0x1cb))/0xa)+parseInt(_0x2d3a94(0x1c2))/0xb;if(_0x417752===_0x2a51d8)break;else _0x459192['push'](_0x459192['shift']());}catch(_0x2d8619){_0x459192['push'](_0x459192['shift']());}}}(_0x5ad3,0x2421f));const menuTombol=document[_0x6f5e7(0x1cc)](_0x6f5e7(0x1c5)),nav=document[_0x6f5e7(0x1cc)](_0x6f5e7(0x1be));menuTombol[_0x6f5e7(0x1ca)](_0x6f5e7(0x1c8),function(){const _0x469d69=_0x6f5e7;nav['classList'][_0x469d69(0x1ce)](_0x469d69(0x1c0));}),$(document)[_0x6f5e7(0x1c1)](()=>{const _0x849b34=_0x6f5e7;$('td')[_0x849b34(0x1c8)](function(_0x453a50){const _0x3e0ca3=_0x849b34;alert(_0x3e0ca3(0x1d0)+$(this)['html']()+'?');}),$('th')['click'](function(_0x388b95){const _0x158fe7=_0x849b34;alert(_0x158fe7(0x1d0)+$(this)['html']()+'?');});});
+const menuTombol = document.querySelector('.menu-tombol input');
+const nav = document.querySelector('nav ul');
+
+menuTombol.addEventListener('click', function () {
+    nav.classList.toggle('slide');
+});
+
+
+$(document).ready(() => {
+    $("td").click(function (event) {
+        alert("Ada apa dengan " + $(this).html() + "?");
+    });
+    $("th").click(function (event) {
+        alert("Ada apa dengan " + $(this).html() + "?");
+    });
+});
