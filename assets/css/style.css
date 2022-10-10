@@ -12,7 +12,7 @@ body {
     font-family: 'Courier', sans-serif;
     background-color: #000;
     overflow-x: hidden;
-    background-image: url(https://cutewallpaper.org/27/black-green-wallpaper-gif/1906623037.jpg);
+    background-image: url("https://wallpapercave.com/wp/wp9917503.jpg");
     background-position: center;
     height: 100%;
     background-repeat: no-repeat;
@@ -50,6 +50,7 @@ nav {
     align-items: center;
     border-bottom: 0.1px solid rgb(35, 136, 35);
     transition: all 0.3s ease-in-out;
+    z-index: 300;
 }
 
 nav .logo {
@@ -67,6 +68,7 @@ nav ul {
     list-style: none;
     width: 40%;
     justify-content: space-between;
+    z-index: 300;
 }
 
 nav ul li a {
@@ -153,8 +155,11 @@ img {
     border: 0.2rem solid #fff;
 }
 
+::selection {
+    color: red;
+}
+
 ::-webkit-scrollbar {
-    -webkit-appearance: none;
     width: 5px;
     height: 5px;
 }
@@ -288,6 +293,32 @@ img {
     border-bottom: 3px dashed #2aa118;
 }
 
+.sesuaikan {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.foto-tentang {
+    width: 250px;
+    height: 250px;
+    border-radius: 14px;
+    border: 0.2rem solid #2aa118;
+}
+
+.foto-tentang:hover {
+    transform: scale(1.2);
+    border: 0.2rem dashed lime;
+}
+
+.paragraf-tentang {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
 
 /* Halaman Tabel Top 10 teman */
 table {
@@ -317,21 +348,6 @@ td:hover {
     cursor: pointer;
 }
 
-/* Tentang Saya */
-/* #tentang-saya {
-    margin-top: 150px;
-} */
-/* Portofolio */
-/* #portofolio {
-    float: right;
-    padding-right: 100px;
-} */
-
-/* Sertifikat */
-/* #sertifikat {
-    float: left;
-    padding-left: 100px;
-} */
 
 .isi {
     display: flex;
@@ -346,16 +362,18 @@ td:hover {
     text-indent: 0.5in;
 }
 
-/* Footer */
 
 
-
-/* Responsif Default */
+/* Responsive ukuran TAB / Rotation HP */
 
 @media screen and (max-width: 991.98px) {
+    nav ul {
+        width: 50%;
+    }
+
     img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         border: 0.2rem solid white;
     }
@@ -396,19 +414,16 @@ td:hover {
     }
 }
 
-/* Menu Responsif Breakpoint */
 
-/* Menu Ukuran Tablet */
-@media screen and (max-width: 768px) {
-    nav ul {
-        width: 50%;
-    }
-}
-
-
-
-/* Menu Ukuran Mobile */
+/* Responsive Ukuran HP/Mobile*/
 @media screen and (max-width: 576px) {
+    img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 0.2rem solid white;
+    }
+
     nav ul li a {
         font-size: larger;
         color: #fff;
@@ -417,13 +432,14 @@ td:hover {
 
     .menu-tombol {
         display: flex;
+        z-index: 300;
     }
 
 
     nav ul {
         position: fixed;
-        right: 40px;
-        top: 45px;
+        right: 25px;
+        top: 6px;
         width: 60%;
         height: 50vh;
         justify-content: space-evenly;
@@ -434,8 +450,8 @@ td:hover {
         backdrop-filter: blur(25px);
         -webkit-backdrop-filter: blur(17px);
         border-radius: 10px;
-        z-index: -1;
-        transform: translateY(-100%);
+        z-index: 300;
+        transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
         border-radius: 14px;
@@ -450,7 +466,7 @@ td:hover {
     .anak {
         border: 3px solid rgb(40, 165, 40);
         border-radius: 14px;
-        background: rgba(53, 201, 30, 0.4);
+        background: rgba(22, 97, 11, 0.767);
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(7px);
         padding: 15px;
@@ -458,7 +474,7 @@ td:hover {
         text-align: center;
         flex-direction: column;
         align-items: center;
-        margin: 40px;
+        margin: 10px;
         color: lime;
     }
 
@@ -466,5 +482,20 @@ td:hover {
         color: #fff;
         font-size: 12pt;
         text-align: justify;
+    }
+
+    .sesuaikan {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .foto-tentang {
+        width: 250px;
+        height: 260px;
+        border-radius: 14px;
+        border: 0.2rem solid #2aa118;
     }
 }
