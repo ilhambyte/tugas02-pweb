@@ -5,11 +5,7 @@ menuTombol.addEventListener('click', function () {
     nav.classList.toggle('slide');
 });
 
-<<<<<<< HEAD
 // Tabel Klik
-=======
-
->>>>>>> a070722ecbd25ea111987ee88750823e1a62b2b5
 $(document).ready(() => {
     $("td").click(function (event) {
         alert("Ada apa dengan " + $(this).html() + "?");
